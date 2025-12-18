@@ -45,7 +45,6 @@ bin/
 *.ipr
 
 # Build output and generated files
-out/
 build/
 target/
 .gradle/
