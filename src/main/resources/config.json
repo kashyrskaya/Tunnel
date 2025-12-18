@@ -1,0 +1,16 @@
+{
+  "tunnel": {
+    "capacity": 3,
+    "maxTrainsInDirection": 2,
+    "trainTravelTimeSeconds": 2
+  },
+  "trains": [
+    { "direction": "NORTH", "arrivalTimeDelayMs": 0 },
+    { "direction": "SOUTH", "arrivalTimeDelayMs": 50 },
+    { "direction": "NORTH", "arrivalTimeDelayMs": 100 },
+    { "direction": "NORTH", "arrivalTimeDelayMs": 150 },
+    { "direction": "SOUTH", "arrivalTimeDelayMs": 200 },
+    { "direction": "SOUTH", "arrivalTimeDelayMs": 250 },
+    { "direction": "NORTH", "arrivalTimeDelayMs": 300 }
+  ]
+}
