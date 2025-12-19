@@ -2,6 +2,7 @@ package lt.esdc.tunnel.train;
 
 import lt.esdc.tunnel.resource.Tunnel;
 import lt.esdc.tunnel.resource.Direction;
+import lt.esdc.tunnel.util.TrainIdGenerator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,13 +12,12 @@ import java.util.concurrent.TimeUnit;
 public class Train implements Callable<Boolean> {
     private static final Logger LOGGER = LogManager.getLogger(Train.class);
 
-    private final int trainId;
+    private int trainId;
     private final Direction direction;
     private final Tunnel tunnel;
     private final int travelTimeSeconds;
 
-    public Train(int trainId, Direction direction, Tunnel tunnel, int travelTimeSeconds) {
-        this.trainId = trainId;
+    public Train(Direction direction, Tunnel tunnel, int travelTimeSeconds) {
         this.direction = direction;
         this.tunnel = tunnel;
         this.travelTimeSeconds = travelTimeSeconds;
@@ -29,6 +29,8 @@ public class Train implements Callable<Boolean> {
 
     @Override
     public Boolean call() throws Exception {
+        this.trainId = TrainIdGenerator.getInstance().getNextId();
+
         LOGGER.info("Train {} heading {} is requesting to enter the tunnel.", trainId, direction);
         boolean entered = tunnel.enterTunnel(this);
 

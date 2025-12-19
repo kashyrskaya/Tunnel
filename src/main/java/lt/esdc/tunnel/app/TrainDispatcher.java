@@ -6,7 +6,6 @@ import lt.esdc.tunnel.config.TrainConfig;
 import lt.esdc.tunnel.resource.Direction;
 import lt.esdc.tunnel.train.Train;
 import lt.esdc.tunnel.resource.Tunnel;
-import lt.esdc.tunnel.util.TrainIdGenerator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -34,7 +33,6 @@ public class TrainDispatcher {
             List<Future<Boolean>> results = new ArrayList<>();
 
             try (ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()) {
-                TrainIdGenerator idGen = TrainIdGenerator.getInstance();
 
                 for (int i = 0; i < config.getTrains().size(); i++) {
                     TrainConfig tc = config.getTrains().get(i);
@@ -44,9 +42,9 @@ public class TrainDispatcher {
                     }
 
                     Tunnel assignedTunnel = tunnels[i % TUNNEL_COUNT];
-                    Train train = new Train(idGen.getNextId(), Direction.valueOf(tc.getDirection().toUpperCase()), assignedTunnel, config.getTunnel().getTrainTravelTimeSeconds());
+                    Train train = new Train(Direction.valueOf(tc.getDirection().toUpperCase()), assignedTunnel, config.getTunnel().getTrainTravelTimeSeconds());
 
-                    LOGGER.info("Dispatcher: Sending {} to Tunnel {}", train, (i % TUNNEL_COUNT + 1));
+                    LOGGER.info("Dispatcher: Submitting train task to Tunnel {}", (i % TUNNEL_COUNT + 1));
 
                     Future<Boolean> result = executor.submit(train);
                     results.add(result);
