@@ -96,3 +96,54 @@
 2025-12-18 18:26:05.524 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Successful passages: 7
 2025-12-18 18:26:05.524 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Failed/Interrupted: 0
 2025-12-18 18:26:05.524 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Simulation finished. All trains have passed.
+2025-12-19 14:30:08.813 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Configuration loaded successfully.
+2025-12-19 14:30:08.825 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Dispatcher: Sending Train{trainId=1, direction=NORTH} to Tunnel 1
+2025-12-19 14:30:08.828 [] INFO  lt.esdc.tunnel.model.Train - Train 1 heading NORTH is requesting to enter the tunnel.
+2025-12-19 14:30:08.830 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: FREE -> NORTH_ACTIVE
+2025-12-19 14:30:08.831 [] INFO  lt.esdc.tunnel.model.Train - Train 1 heading NORTH has entered the tunnel. Traveling for 2 seconds.
+2025-12-19 14:30:08.879 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Dispatcher: Sending Train{trainId=2, direction=SOUTH} to Tunnel 2
+2025-12-19 14:30:08.880 [] INFO  lt.esdc.tunnel.model.Train - Train 2 heading SOUTH is requesting to enter the tunnel.
+2025-12-19 14:30:08.880 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: FREE -> SOUTH_ACTIVE
+2025-12-19 14:30:08.880 [] INFO  lt.esdc.tunnel.model.Train - Train 2 heading SOUTH has entered the tunnel. Traveling for 2 seconds.
+2025-12-19 14:30:08.982 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Dispatcher: Sending Train{trainId=3, direction=NORTH} to Tunnel 1
+2025-12-19 14:30:08.983 [] INFO  lt.esdc.tunnel.model.Train - Train 3 heading NORTH is requesting to enter the tunnel.
+2025-12-19 14:30:08.983 [] INFO  lt.esdc.tunnel.model.Train - Train 3 heading NORTH has entered the tunnel. Traveling for 2 seconds.
+2025-12-19 14:30:09.136 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Dispatcher: Sending Train{trainId=4, direction=NORTH} to Tunnel 2
+2025-12-19 14:30:09.137 [] INFO  lt.esdc.tunnel.model.Train - Train 4 heading NORTH is requesting to enter the tunnel.
+2025-12-19 14:30:09.340 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Dispatcher: Sending Train{trainId=5, direction=SOUTH} to Tunnel 1
+2025-12-19 14:30:09.340 [] INFO  lt.esdc.tunnel.model.Train - Train 5 heading SOUTH is requesting to enter the tunnel.
+2025-12-19 14:30:09.594 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Dispatcher: Sending Train{trainId=6, direction=SOUTH} to Tunnel 2
+2025-12-19 14:30:09.595 [] INFO  lt.esdc.tunnel.model.Train - Train 6 heading SOUTH is requesting to enter the tunnel.
+2025-12-19 14:30:09.595 [] INFO  lt.esdc.tunnel.model.Train - Train 6 heading SOUTH has entered the tunnel. Traveling for 2 seconds.
+2025-12-19 14:30:09.897 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Dispatcher: Sending Train{trainId=7, direction=NORTH} to Tunnel 1
+2025-12-19 14:30:09.898 [] INFO  lt.esdc.tunnel.model.Train - Train 7 heading NORTH is requesting to enter the tunnel.
+2025-12-19 14:30:10.838 [] INFO  lt.esdc.tunnel.model.Train - Train 1 heading NORTH has exited. The tunnel is now free.
+2025-12-19 14:30:10.839 [] INFO  lt.esdc.tunnel.resource.Tunnel - Train{trainId=1, direction=NORTH} exiting tunnel (direction NORTH).
+2025-12-19 14:30:10.886 [] INFO  lt.esdc.tunnel.model.Train - Train 2 heading SOUTH has exited. The tunnel is now free.
+2025-12-19 14:30:10.886 [] INFO  lt.esdc.tunnel.resource.Tunnel - Train{trainId=2, direction=SOUTH} exiting tunnel (direction SOUTH).
+2025-12-19 14:30:10.988 [] INFO  lt.esdc.tunnel.model.Train - Train 3 heading NORTH has exited. The tunnel is now free.
+2025-12-19 14:30:10.989 [] INFO  lt.esdc.tunnel.resource.Tunnel - Train{trainId=3, direction=NORTH} exiting tunnel (direction NORTH).
+2025-12-19 14:30:10.989 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: NORTH -> FREE
+2025-12-19 14:30:10.989 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: FREE -> SOUTH_ACTIVE
+2025-12-19 14:30:10.989 [] INFO  lt.esdc.tunnel.model.Train - Train 5 heading SOUTH has entered the tunnel. Traveling for 2 seconds.
+2025-12-19 14:30:11.601 [] INFO  lt.esdc.tunnel.model.Train - Train 6 heading SOUTH has exited. The tunnel is now free.
+2025-12-19 14:30:11.602 [] INFO  lt.esdc.tunnel.resource.Tunnel - Train{trainId=6, direction=SOUTH} exiting tunnel (direction SOUTH).
+2025-12-19 14:30:11.602 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: SOUTH -> FREE
+2025-12-19 14:30:11.603 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: FREE -> NORTH_ACTIVE
+2025-12-19 14:30:11.603 [] INFO  lt.esdc.tunnel.model.Train - Train 4 heading NORTH has entered the tunnel. Traveling for 2 seconds.
+2025-12-19 14:30:12.994 [] INFO  lt.esdc.tunnel.model.Train - Train 5 heading SOUTH has exited. The tunnel is now free.
+2025-12-19 14:30:12.995 [] INFO  lt.esdc.tunnel.resource.Tunnel - Train{trainId=5, direction=SOUTH} exiting tunnel (direction SOUTH).
+2025-12-19 14:30:12.995 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: SOUTH -> FREE
+2025-12-19 14:30:12.995 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: FREE -> NORTH_ACTIVE
+2025-12-19 14:30:12.995 [] INFO  lt.esdc.tunnel.model.Train - Train 7 heading NORTH has entered the tunnel. Traveling for 2 seconds.
+2025-12-19 14:30:13.609 [] INFO  lt.esdc.tunnel.model.Train - Train 4 heading NORTH has exited. The tunnel is now free.
+2025-12-19 14:30:13.610 [] INFO  lt.esdc.tunnel.resource.Tunnel - Train{trainId=4, direction=NORTH} exiting tunnel (direction NORTH).
+2025-12-19 14:30:13.610 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: NORTH -> FREE
+2025-12-19 14:30:14.999 [] INFO  lt.esdc.tunnel.model.Train - Train 7 heading NORTH has exited. The tunnel is now free.
+2025-12-19 14:30:15.000 [] INFO  lt.esdc.tunnel.resource.Tunnel - Train{trainId=7, direction=NORTH} exiting tunnel (direction NORTH).
+2025-12-19 14:30:15.000 [] INFO  lt.esdc.tunnel.resource.Tunnel - State changed: NORTH -> FREE
+2025-12-19 14:30:15.001 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - --- Statistics ---
+2025-12-19 14:30:15.001 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Total trains: 7
+2025-12-19 14:30:15.001 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Successful passages: 7
+2025-12-19 14:30:15.002 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Failed/Interrupted: 0
+2025-12-19 14:30:15.002 [main] INFO  lt.esdc.tunnel.app.TrainDispatcher - Simulation finished. All trains have passed.

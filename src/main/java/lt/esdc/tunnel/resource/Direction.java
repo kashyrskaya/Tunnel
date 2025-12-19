@@ -1,4 +1,4 @@
-package lt.esdc.tunnel.model;
+package lt.esdc.tunnel.resource;
 
 public enum Direction {
     NORTH,

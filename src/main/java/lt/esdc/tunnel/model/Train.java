@@ -1,6 +1,7 @@
 package lt.esdc.tunnel.model;
 
 import lt.esdc.tunnel.resource.Tunnel;
+import lt.esdc.tunnel.resource.Direction;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
