@@ -9,7 +9,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
 public class Train implements Callable<Boolean> {
-    private static final Logger LOGGER = LogManager.getLogger(Train.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(Train.class);
 
     private final int trainId;
     private final Direction direction;
@@ -38,7 +38,6 @@ public class Train implements Callable<Boolean> {
                 TimeUnit.SECONDS.sleep(travelTimeSeconds);
                 LOGGER.info("Train {} heading {} has exited. The tunnel is now free.", trainId, direction);
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
                 LOGGER.warn("The train {} heading {} was interrupted during travel.", trainId, direction);
                 return false;
             } finally {
