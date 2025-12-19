@@ -4,7 +4,7 @@ import lt.esdc.tunnel.config.AppConfig;
 import lt.esdc.tunnel.config.ConfigLoader;
 import lt.esdc.tunnel.config.TrainConfig;
 import lt.esdc.tunnel.resource.Direction;
-import lt.esdc.tunnel.model.Train;
+import lt.esdc.tunnel.train.Train;
 import lt.esdc.tunnel.resource.Tunnel;
 import lt.esdc.tunnel.util.TrainIdGenerator;
 import org.apache.logging.log4j.LogManager;

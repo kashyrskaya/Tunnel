@@ -1,6 +1,6 @@
 package lt.esdc.tunnel.resource;
 
-import lt.esdc.tunnel.model.Train;
+import lt.esdc.tunnel.train.Train;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

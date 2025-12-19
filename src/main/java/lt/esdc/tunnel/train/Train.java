@@ -1,4 +1,4 @@
-package lt.esdc.tunnel.model;
+package lt.esdc.tunnel.train;
 
 import lt.esdc.tunnel.resource.Tunnel;
 import lt.esdc.tunnel.resource.Direction;
